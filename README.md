@@ -1,4 +1,6 @@
 # FlappyBird
-Game 
 
-![](img/mota.jpg)
+**Draw design UI:**
+
+<img src="img/mota.jpg" width = 70%>
+
