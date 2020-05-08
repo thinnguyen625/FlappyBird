@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Bird from './Bird'
 import Foreground from './Foreground'
 import Pipe from './Pipe'
@@ -6,6 +6,14 @@ import BgImage from '../images/bg.png'
 
 
 const Game = () => {
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if(e.keyCode === 32){
+        fly()
+      }
+    } 
+    document.addEventListener('keypress', handleKeyPress)
+  }, [])
   return (
     <div style={{
       position: 'relative',
@@ -20,4 +28,7 @@ const Game = () => {
   );
 }
 
+const fly = () => {
+  console.log('fly');
+}
 export default Game;

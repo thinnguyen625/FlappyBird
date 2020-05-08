@@ -1,11 +1,12 @@
 import React from 'react';
 import Game from './components/Game'
+import {Provider} from 'react-redux'
 
-const App = () => {
+const App = ({store}) => {
   return (
-    <div>
+    <Provider store = {store}>
        <Game />
-    </div>
+    </Provider>
   );
 } 
 
