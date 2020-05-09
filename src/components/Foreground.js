@@ -6,8 +6,8 @@ const Foreground = () => {
     <div style={{
       position: 'absolute',
       bottom: 0,
-      width: 300,
-      height: 100,
+      width: 306,
+      height: 108,
       
       background: `url(${FgImage})`,
     }}></div>
